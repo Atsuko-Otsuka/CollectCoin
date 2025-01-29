@@ -27,6 +27,8 @@ public class FollowPlayer : MonoBehaviour
     void LateUpdate()
     {
         // プレイヤーの位置にオフセットを加えることで、カメラがプレイヤーを追従する
-        transform.position = target.position + offset;
+        transform.position = target.position + target.rotation * offset;
+
+        transform.LookAt(target);
     }
 }
