@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;  // アニメーターコンポーネントへの参照
     private Rigidbody rb;  // Rigidbodyコンポーネントへの参照
 
-    public float moveSpeed = 0.1f;  // 移動速度
+    public float moveSpeed = 0.3f;  // 移動速度
     public float rotateSpeed = 2;  // 回転速度
     public float jump = 1;  // ジャンプ力
 
