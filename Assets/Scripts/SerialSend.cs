@@ -19,13 +19,13 @@ public class SerialSend : MonoBehaviour
         if (Mathf.Abs(h - prevH) > 0.001f) // (‚Ù‚Ú“¯‚¶‚Å‚È‚¯‚ê‚Î)
         {
             // h ‚ª -1f ‚É•Ï‚í‚Á‚½‚Æ‚«
-            if (h == -1f)
+            if (h == 1f)
             {
                 serialHandler.Write("1"); // angle=0‹ ‚É‚·‚é–½—ß
                 Debug.Log("[SerialSend] Wrote: 1 (turn left)");
             }
             // h ‚ª +1f ‚É•Ï‚í‚Á‚½‚Æ‚«
-            else if (h == 1f)
+            else if (h == -1f)
             {
                 serialHandler.Write("2"); // angle=180‹ ‚É‚·‚é–½—ß
                 Debug.Log("[SerialSend] Wrote: 2 (turn right)");
